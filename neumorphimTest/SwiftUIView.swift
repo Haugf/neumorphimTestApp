@@ -94,10 +94,11 @@ struct SwiftUIView: View {
                         .shadow(color: Color.black.opacity(0.2), radius: 10, x: 5, y: 5)
                         .overlay(
                             HStack{
+                                Image(systemName: "trash")
                             })
                     
                     Text("           Receiving Data        ")
-                        .colorInvert()
+//                        .colorInvert()
                     RoundedRectangle(cornerRadius: 40)
                         .fill(Color.boundingBoxBlue)
                         .frame(width: 28, height: 28)

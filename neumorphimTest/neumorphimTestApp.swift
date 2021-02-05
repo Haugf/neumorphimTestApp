@@ -13,7 +13,8 @@ struct neumorphimTestApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            SwiftUIView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
