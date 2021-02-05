@@ -16,6 +16,7 @@
 		A3A6C3FB25C3AC970042D832 /* neumorphimTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6C3FA25C3AC970042D832 /* neumorphimTestTests.swift */; };
 		A3A6C40625C3AC970042D832 /* neumorphimTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6C40525C3AC970042D832 /* neumorphimTestUITests.swift */; };
 		A3A6C41725C3AD020042D832 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A6C41625C3AD020042D832 /* SwiftUIView.swift */; };
+		A3D30DE525CCE058002E9073 /* BluetoothController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D30DE425CCE058002E9073 /* BluetoothController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A3A6C40525C3AC970042D832 /* neumorphimTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neumorphimTestUITests.swift; sourceTree = "<group>"; };
 		A3A6C40725C3AC970042D832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3A6C41625C3AD020042D832 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		A3D30DE425CCE058002E9073 /* BluetoothController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				A3A6C3F125C3AC970042D832 /* Info.plist */,
 				A3A6C3EE25C3AC970042D832 /* neumorphimTest.xcdatamodeld */,
 				A3A6C3E925C3AC970042D832 /* Preview Content */,
+				A3D30DE425CCE058002E9073 /* BluetoothController.swift */,
 			);
 			path = neumorphimTest;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				A3A6C3E625C3AC950042D832 /* ContentView.swift in Sources */,
 				A3A6C3E425C3AC950042D832 /* neumorphimTestApp.swift in Sources */,
 				A3A6C3F025C3AC970042D832 /* neumorphimTest.xcdatamodeld in Sources */,
+				A3D30DE525CCE058002E9073 /* BluetoothController.swift in Sources */,
 				A3A6C41725C3AD020042D832 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
