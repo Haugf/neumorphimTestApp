@@ -28,7 +28,8 @@ struct Now: Identifiable {
 
 struct SwiftUIView: View {
     
-    let nowPayload = [Now(red: 5, green: 8), Now(red: 5, green: 8),Now(red: 5, green: 8), Now(red: 5, green: 8),Now(red: 5, green: 8)]
+    @ObservedObject var bleManager = BluetoothController()
+    
 
     
     var body: some View {
@@ -48,12 +49,12 @@ struct SwiftUIView: View {
                                 // Inside the first green row of capsules
                                 Spacer()
                                 
-                                ForEach( nowPayload )
+                                ForEach( bleManager.nowPayload )
                                     { now in VStack {
                                             VStack {
                                                 Capsule()
                                                     .fill(Color.barGreen)
-                                                    .frame(width: 22,   height: CGFloat(80))
+                                                    .frame(width: 22,   height: CGFloat(now.green))
                                                     }.frame(height: 100)
                                                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 5, y: 5)
                                         }
@@ -70,12 +71,12 @@ struct SwiftUIView: View {
                                 // Inside the first green row of capsules
                                 Spacer()
                                 
-                                ForEach( nowPayload )
+                                ForEach( bleManager.nowPayload )
                                     { now in VStack {
                                             VStack {
                                                 Capsule()
                                                     .fill(Color.barRed)
-                                                    .frame(width: 22,   height: CGFloat(80))
+                                                    .frame(width: 22,   height: CGFloat(now.red))
                                                     }.frame(height: 100)
                                                 .shadow(color: Color.black.opacity(0.2), radius: 10, x: 5, y: 5)
                                         }
@@ -98,6 +99,16 @@ struct SwiftUIView: View {
                             })
                     
                     Text("           Receiving Data        ")
+                    
+                    // Status goes here
+                    if bleManager.isSwitchedOn {
+                            Text("Bluetooth is switched on")
+                                        .foregroundColor(.green)
+                    }
+                    else {
+                            Text("Bluetooth is NOT switched on")
+                                        .foregroundColor(.red)
+                    }
 //                        .colorInvert()
                     RoundedRectangle(cornerRadius: 40)
                         .fill(Color.boundingBoxBlue)

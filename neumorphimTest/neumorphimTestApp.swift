@@ -13,8 +13,7 @@ struct neumorphimTestApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-
+//            BluetoothController()
             SwiftUIView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
